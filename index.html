@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar"></nav>
+    <div class="landing-section">
+      <img src="radcom_romania_logo.jpg"  class="logo">
+      <div class="introduction">
+        <div class="title main-color">
+          Our Radcom Services
+        </div>
+        <div class="text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, ill
+          o. Ipsam molestias laboriosam facere suscipit, nihil architecto earum illo fugit nisi eos omnis ipsa ratione impedit atque quibusdam libero fugiat.
+        </div>
+      </div>
+    </div>
+    <div class="spacing"></div>
+    <div class="main">
+      <div class="container reveal">
+        <img src="https://dummyimage.com/600x400/ededed/#1c3f9.png" />
+        <div class="info">
+          <div class="service-name main-color">Service Name</div>
+          <!-- <div class="slogan"><span style="color: #D1CD4D;">Lorem</span> ipsum Dolor <span style="color: #D1CD4D;">loerm</span>  ipsum</div> -->
+          <div class="description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+            exercitationem repellat illo! Veniam fugit ex voluptatum officia
+            dolorem velit eaque in fuga voluptas ipsa, est asperiores illum
+            minus aspernatur doloremque? Lorem ipsum dolor sit a met consectetur
+            adipisicing elit. Laboriosam quos saepe doloremque temporibus eius
+            ea, animi maxime cum voluptatum sed illum totam perspiciatis, soluta
+            exercitationem! Sit fuga quod iusto sint.
+          </div>
+          <div>
+            <button class="btn">
+              More about This Service
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="secondary"></div>
+    <div class="third">
+      <div class="container">
+        <div class="info">
+          <div class="service-name main-color reveal">Service Name</div>
+          <!-- <div class="slogan"><span style="color: #D1CD4D;">Lorem</span> ipsum Dolor <span style="color: #D1CD4D;">loerm</span>  ipsum</div> -->
+          <div class="description reveal">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+            exercitationem repellat illo! Veniam fugit ex voluptatum officia
+            dolorem velit eaque in fuga voluptas ipsa, est asperiores illum
+            minus aspernatur doloremque? Lorem ipsum dolor sit a met consectetur
+            adipisicing elit. Laboriosam quos saepe doloremque temporibus eius
+            ea, animi maxime cum voluptatum sed illum totam perspiciatis, soluta
+            exercitationem! Sit fuga quod iusto sint.
+          </div>
+          <div>
+            <button class="btn2 reveal">
+              More about This Service
+            </button>
+          </div>
+        </div>
+        <img
+          src="https://dummyimage.com/600x400/ededed/#1c3f9.png"
+          class="reveal"
+        />
+      </div>
+    </div>
+    <div class="forth"></div>
+    <div class="main">
+        <div class="container reveal">
+          <img src="https://dummyimage.com/600x400/ededed/#1c3f9.png" />
+          <div class="info">
+            <div class="service-name main-color">Service Name</div>
+            <!-- <div class="slogan"><span style="color: #D1CD4D;">Lorem</span> ipsum Dolor <span style="color: #D1CD4D;">loerm</span>  ipsum</div> -->
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
+              exercitationem repellat illo! Veniam fugit ex voluptatum officia
+              dolorem velit eaque in fuga voluptas ipsa, est asperiores illum
+              minus aspernatur doloremque? Lorem ipsum dolor sit a met consectetur
+              adipisicing elit. Laboriosam quos saepe doloremque temporibus eius
+              ea, animi maxime cum voluptatum sed illum totam perspiciatis, soluta
+              exercitationem! Sit fuga quod iusto sint.
+            </div>
+            <div>
+              <button class="btn">
+                More about This Service
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secondary"></div>
+  </body>
+  <script type="text/javascript">
+    window.addEventListener("scroll", reveal);
+
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var revealTop = reveals[i].getBoundingClientRect().top;
+        var revealPoint = 10;
+
+        if (revealTop < windowHeight - revealPoint) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+    
+  </script>
+</html>

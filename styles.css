@@ -1,0 +1,177 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: "Rajdhani", sans-serif;
+}
+
+img{
+    height: 40vh;
+    width: 30vw;
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1.5s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+.main-color{
+    color: #1c3f95;
+}
+
+.navbar{
+    height: 10vh;
+    background-color: #434850;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 2;
+}
+
+.landing-section{
+    height: 50vh;
+    background-color: #D1CD4D;
+    margin-top: 10vh;
+    display: flex;
+    padding-top: 10vh;
+    padding-left: 15vw;
+}
+
+.introduction{
+    width: 45%;
+    padding-left: 2vw;
+    padding-top: 5vh;
+}
+
+.title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.text{
+    color: #ffffff;
+    font-size: 1vw;
+    padding-top: 1.8vw;
+    letter-spacing: 0.8px;
+    line-height: 28px;
+}
+
+.logo{
+    height: 10rem;
+    width: 10rem;
+    padding-top: 5vh;
+    padding-left: 2vw;
+}
+
+.spacing{
+    height: 15vh;
+    width: 100%;
+    background: linear-gradient(to bottom right, #D1CD4D 50%, #ffffff 50%);
+}
+
+.main{
+    height: 40vh;
+    width: 100%;
+    margin-top: 10vh;
+    background: #ffffff
+}
+
+.container{
+    display: flex;
+    height: 25rem;
+    padding-right: 5vw;
+    padding-left: 2vw;
+}
+
+.info{
+    padding-left: 10vh;
+}
+
+.service-name{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.slogan{
+    margin-top: -0.5vh;
+    padding-left: 0.7vw;
+}
+
+.description{
+    font-size: 1vw;
+    padding-top: 1.8vw;
+    letter-spacing: 0.8px;
+    line-height: 28px;
+}
+
+.btn {
+    background: transparent;
+    border: 3px solid #D1CD4D;
+    border-radius: 0px;
+    color: #D1CD4D;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 14px 36px;
+    margin-top: 62px;
+    margin-right: 16px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #D1CD4D;
+    color: #ffffff;
+}
+
+.secondary{
+    height: 25vh;
+    width: 100%;
+    background: linear-gradient(to bottom right, #ffffff 50%, #D1CD4D 50%);
+}
+
+.third{
+    padding-top: 7vh;
+    height: 65vh;
+    width: 100%;
+    background: #D1CD4D
+}
+
+.third .info {
+    padding-right: 10vw;
+}
+
+.btn2{
+    background: transparent;
+    border: 3px solid #ffffff;
+    border-radius: 0px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 14px 36px;
+    margin-top: 62px;
+    margin-right: 16px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.btn2:hover{
+    background-color: #ffffff;
+    color: #D1CD4D
+}
+
+.forth{
+    height: 10vh;
+    width: 100%;
+    background: linear-gradient(to bottom left, #D1CD4D 50%, #ffffff 50%);
+}
+
+/* // */
